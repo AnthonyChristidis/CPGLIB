@@ -7,7 +7,9 @@ Author: Anthony Christidis <anthony.christidis@stat.ubc.ca>,
     Stefan Van Aelst <stefan.vanaelst@kuleuven.be>,
     Ruben Zamar <ruben@stat.ubc.ca>
 Maintainer: Anthony Christidis <anthony.christidis@stat.ubc.ca>
-Description: PACKAGE DESCRIPTION HERE.
+Description: Functions to generate ensembles of generalized linear models using 
+             competing proximal gradients. The optimal sparsity and diversity
+             tuning parameters are selected via an alternating grid search.
 License: GPL (>= 2)
 Biarch: true
 Imports: Rcpp (>= 1.0.3)
