@@ -99,8 +99,7 @@ cpg.out <- cv.cpg(x.train, y.train,
                   alpha_s = 3/4, alpha_d = 1,
                   n_lambda_sparsity = 100, n_lambda_diversity = 100,
                   balanced_cycling = TRUE,
-                  tolerance = 1e-5, max_iter = 1e3,
-                  active_set = FALSE)
+                  tolerance = 1e-5, max_iter = 1e5)
 
 # Predictions
 cpg.prob <- predict(cpg.out, newx = x.test, type = "prob", 

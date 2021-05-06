@@ -49,8 +49,7 @@
 #'                          alpha_s = 3/4,
 #'                          lambda_sparsity = 0.01, 
 #'                          acceleration = TRUE,
-#'                          tolerance = 1e-5, max_iter = 1e5,
-#'                          active_set = FALSE)
+#'                          tolerance = 1e-5, max_iter = 1e5)
 #' 
 #' # Coefficients
 #' coef(proxgrad.out)

@@ -51,8 +51,7 @@
 #'                alpha_s=3/4, alpha_d=1,
 #'                lambda_sparsity=0.01, lambda_diversity=1,
 #'                balanced_cycling=TRUE,
-#'                tolerance=1e-5, max_iter=1e5,
-#'                active_set=FALSE)
+#'                tolerance=1e-5, max_iter=1e5)
 #'                
 #' # Coefficients for each group                
 #' cpg.coef <- coef(cpg.out, ensemble_average = FALSE)
@@ -129,8 +128,7 @@ coef.CPGLIB <- function(object, groups = NULL, ensemble_average = FALSE, ...){
 #'                   alpha_s = 3/4, alpha_d = 1,
 #'                   lambda_sparsity = 1, lambda_diversity = 1,
 #'                   balanced_cycling = TRUE,
-#'                   tolerance = 1e-5, max_iter = 1e3,
-#'                   active_set = FALSE)
+#'                   tolerance = 1e-5, max_iter = 1e5)
 #' cpg.coef <- coef(cpg.out)
 #' 
 #' # Coefficients for each group                

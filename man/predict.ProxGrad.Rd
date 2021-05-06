@@ -41,13 +41,11 @@ x.train <- mvnfast::rmvn(n, mu = rep(0, p), sigma = Sigma)
 prob.train <- exp(x.train \%*\% beta)/
               (1+exp(x.train \%*\% beta))
 y.train <- rbinom(n, 1, prob.train)
-mean(y.train)
 # Test data
 x.test <- mvnfast::rmvn(N, mu = rep(0, p), sigma = Sigma)
 prob.test <- exp(x.test \%*\% beta)/
              (1+exp(x.test \%*\% beta))
 y.test <- rbinom(N, 1, prob.test)
-mean(y.test)
 
 # ProxGrad - Single Group
 proxgrad.out <- ProxGrad(x.train, y.train,
@@ -56,8 +54,7 @@ proxgrad.out <- ProxGrad(x.train, y.train,
                          alpha_s = 3/4,
                          lambda_sparsity = 0.01, 
                          acceleration = TRUE,
-                         tolerance = 1e-5, max_iter = 1e5,
-                         active_set = FALSE)
+                         tolerance = 1e-5, max_iter = 1e5)
 
 # Predictions
 proxgrad.prob <- predict(proxgrad.out, newx = x.test, type = "prob")
