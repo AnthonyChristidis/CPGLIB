@@ -65,7 +65,7 @@ cpg.out <- cv.cpg(x.train, y.train,
                   glm_type = "Logistic",
                   G = 5, include_intercept = TRUE,
                   alpha_s = 3/4, alpha_d = 1,
-                  lambda_sparsity = 1, lambda_diversity = 1,
+                  n_lambda_sparsity = 100, n_lambda_diversity = 100,
                   balanced_cycling = TRUE,
                   tolerance = 1e-5, max_iter = 1e5)
 
