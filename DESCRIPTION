@@ -1,8 +1,8 @@
 Package: CPGLIB
 Type: Package
 Title: Competing Proximal Gradients Library
-Version: 1.0.0
-Date: 2021-05-05
+Version: 1.0.1
+Date: 2021-05-10
 Author: Anthony Christidis <anthony.christidis@stat.ubc.ca>,
     Stefan Van Aelst <stefan.vanaelst@kuleuven.be>,
     Ruben Zamar <ruben@stat.ubc.ca>
