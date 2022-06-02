@@ -17,3 +17,17 @@ matrix:
       r: release
   allow_failures:
     - os: osx
+    
+before_install: sudo apt-get install libgdal-dev libproj-dev libgeos-dev libudunits2-dev netcdf-bin
+    
+addons:
+  apt:
+    packages:
+      - libgdal-dev
+      - libproj-dev
+      - libudunits2-dev
+      - netcdf-bin
+      - libmpfr-dev
+env:
+ global:
+   - _R_CHECK_FORCE_SUGGESTS_: false

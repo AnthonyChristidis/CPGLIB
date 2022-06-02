@@ -86,15 +86,7 @@ predict.ProxGrad <- function(object, newx, type = c("prob", "class")[1], ...){
       return(logistic.prob) else if(type=="class")
         return(round(logistic.prob, 0))
     
-  } else if(object$glm_type=="Gamma"){
-    
-    return(-1/(split.coef[1] + newx %*% split.coef[-1]))
-    
-  } else if(object$glm_type=="Poisson"){
-    
-    return(exp(split.coef[1] + newx %*% split.coef[-1]))
-    
-  }
+  } 
   
 }
 #'
@@ -149,7 +141,6 @@ predict.ProxGrad <- function(object, newx, type = c("prob", "class")[1], ...){
 #'                             include_intercept = TRUE,
 #'                             alpha_s = 3/4,
 #'                             n_lambda_sparsity = 100, 
-#'                             acceleration = TRUE,
 #'                             tolerance = 1e-5, max_iter = 1e5)
 #' 
 #' # Predictions
