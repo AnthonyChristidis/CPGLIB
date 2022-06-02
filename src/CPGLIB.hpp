@@ -5,7 +5,7 @@
 * Package Name: CPGLIB
 *
 * Created by Anthony-A. Christidis.
-* Copyright © Anthony-A. Christidis. All rights reserved.
+* Copyright ? Anthony-A. Christidis. All rights reserved.
 * ===========================================================
 */
 
@@ -14,7 +14,7 @@
 
 #include <RcppArmadillo.h>
 
-#include "config.h"
+#include "config.h" 
 
 class CPGLIB{
   

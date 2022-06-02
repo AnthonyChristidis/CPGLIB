@@ -5,7 +5,7 @@
 * Package Name: SplitGLM
 *
 * Created by Anthony-A. Christidis.
-* Copyright © Anthony-A. Christidis. All rights reserved.
+* Copyright ? Anthony-A. Christidis. All rights reserved.
 * ===========================================================
 */
 
@@ -424,7 +424,6 @@ void CV_CPGLIB::Compute_CV_Betas(){
 
   // Initial iteration with no diversity
   Get_CV_Sparsity_Initial();
-  double cv_opt_no_diversity = cv_opt_old = cv_opt_new;
 
   // Variables to store the old penalty parameters
   double lambda_sparsity_opt_old, lambda_diversity_opt_old;
